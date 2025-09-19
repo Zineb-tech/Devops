@@ -1,5 +1,21 @@
 package com.example.projet1.exception;
 
-public class FilmNotfoundException extends RuntimeException{
-    private static final long serialVersionUID = 1L;
+public class FilmNotfoundException extends RuntimeException {
+
+
+    public FilmNotfoundException() {
+        super();
+    }
+
+    public FilmNotfoundException(String message) {
+        super(message);
+    }
+
+    public FilmNotfoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public FilmNotfoundException(Throwable cause) {
+        super(cause);
+    }
 }

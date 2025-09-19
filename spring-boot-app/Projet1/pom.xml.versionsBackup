@@ -41,15 +41,18 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- Database connectors -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.1.0</version> <!-- Ensure latest 8.x -->
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <scope>test</scope>
         </dependency>
 
-
-
-        <!-- Database connectors -->
         <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>

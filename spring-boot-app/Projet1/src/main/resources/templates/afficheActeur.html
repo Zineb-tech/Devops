@@ -25,6 +25,7 @@
             <td th:text="${a.nom}"></td>
             <td th:text="${a.prenom}"></td>
             <td>
+                <a th:href="@{/acteur/new}" class="btn btn-outline-primary">Ajouter</a>
                 <a th:href="@{/acteur/delete/{id} (id=${a.id})}" class="btn btn-outline-danger"
                    onclick="return confirm('Voulez vous vraiment supprimer cet acteur?')">Supprimer</a>
                 <a th:href="@{/acteur/edit/{id} (id=${a.id})}" class="btn btn-outline-primary">Modifier</a>

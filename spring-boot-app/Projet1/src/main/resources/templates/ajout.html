@@ -25,13 +25,13 @@
     <p>
       <label for="categories" class="form-label">Categorie : </label>
       <select name="categorie" class="form-select">
-        <option th:each="cat:${categories}" th:value="${cat.id}" th:text="${cat.nom}"></option>
+        <option th:each="cat : ${categories}" th:value="${cat.id}" th:text="${cat.nom}"></option>
       </select>
     </p>
     <p>
       <label for="acteurs" class="form-label">Acteurs : </label>
       <select  name="acteurs" class="form-select" multiple>
-        <option th:each="act:${acteurs}" th:value="${act.id}" th:text="${act.prenom + ' ' + act.nom}"></option>
+        <option th:each="act : ${acteurs}" th:value="${act.id}" th:text="${act.prenom + ' ' + act.nom}"></option>
       </select>
     </p>
     <p>
